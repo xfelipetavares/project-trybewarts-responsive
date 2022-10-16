@@ -9,8 +9,7 @@
     <title>Trybewarts</title>
   </head>
   <body>
-    <div class="wrapper">
-      <navbar class="header">
+      <navbar class="header shadow">
         <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo"/>
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login">
@@ -20,12 +19,30 @@
         </form>
       </navbar>
       <main>
-        <form id="evaluation-form">
+        <form id="evaluation-form">       
+            <div class="sideBySide">
+                <input type="text" class="form-control form-control-lg" id="input-name" placeholder="Nome">
+                <input type="text" class="form-control form-control-lg" id="input-lastname" placeholder="Sobrenome">
+            </div>
+            <div class="sideBySide">
+                <input type="email" class="form-control form-control-lg" id="input-email" placeholder="Email">
+                <select name="" id="house" class="form-select form-select-lg">
+                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>
+            </div>
+            <div>
+                <label id="label-family" for="">
 
+                </label>
+            </div>
         </form>
-        <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
+        <div class="imgBox">
+            <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
+        </div>
       </main>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
