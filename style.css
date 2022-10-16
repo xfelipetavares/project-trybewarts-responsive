@@ -20,7 +20,7 @@ body {
 .header {
   background-color: var(--verde-trybe);
   width: 100%;
-  height: 6rem;
+  height: 8rem;
   margin-bottom: 6rem;
   padding: 0.5rem 1rem;
   display: flex;
@@ -28,7 +28,7 @@ body {
   align-items: center;
 }
 .header img {
-  height: 100%;
+  height: 80%;
 }
 .header h1 {
   color: white;
@@ -59,10 +59,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0 2.5rem 0 10rem;
+  padding: 0 0 0 10rem;
 }
 .imgBox {
   width: 67.5rem;
+  display: flex;
+  justify-content: center;
 }
 #evaluation-form .sideBySide {
   width: 100%;
@@ -70,14 +72,32 @@ main {
   gap: 0.5rem;
 }
 #evaluation-form #house {
-  width: 96%;
+  width: 97%;
 }
 #trybewarts-forms-logo {
   height: 50rem;
 }
-
-/* ================= MOBILE MEDIUM ================= */
-
+.box-radio {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding-left: 0.2rem;
+  gap: 0.5rem;
+  width: 50%;
+}
+.box-radio label input {
+  margin-right: 0.5rem;
+}
+.box-checkbox {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  gap: 0.5rem;
+}
+.box-checkbox label input {
+  margin-right: 0.5rem;
+}
+/* ================= MOBILE MEDIUM ================ */
 @media screen and (max-width: 1024px) {
   /* ================= HEADER ================= */
   .header {
@@ -96,6 +116,7 @@ main {
     flex-direction: column-reverse;
     margin-inline: 1rem;
     border-radius: 5px;
+    padding-inline: 1rem;
   }
   #trybewarts-forms-logo {
     height: 20rem;
@@ -118,8 +139,20 @@ main {
     height: 3rem;
     margin-top: 0.5rem;
   }
+  .box-radio {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+    gap: 0.5rem;
+    width: initial;
+  }
+  .box-checkbox {
+    align-self: flex-start;
+  }
 }
-
 /* ================= MOBILE SMALL ================= */
 @media screen and (max-width: 400px) {
   .header h1 {
